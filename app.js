@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 mongoose.connect(
   `mongodb+srv://${process.env.MONGO_ATLAS_USER}:${
     process.env.MONGO_ATLAS_PASSWORD
-  }@cluster0-o1t8l.mongodb.net/test?retryWrites=true`,
+  }@${process.env.MONGO_ATLAS_CLUSTER}.mongodb.net/test?retryWrites=true`,
   { useNewUrlParser: true }
 );
 
