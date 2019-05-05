@@ -69,7 +69,7 @@ exports.create_new_location = (req, res, next) => {
 
   // check if upload was successfull
   if (req.file) {
-    uploadedFile = fs.readFileSync("/" + req.file.path, "utf8", err => {
+    uploadedFile = fs.readFileSync(req.file.path, "utf8", err => {
       if (err) {
         console.log(err);
       }
