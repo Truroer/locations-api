@@ -7,8 +7,6 @@ exports.create_new_user = (req, res, next) => {
   User.find({ email: req.body.email })
     .exec()
     .then(user => {
-      console.log(user.length);
-
       if (user.length) {
         return res.status(409).json({
           message:
@@ -30,8 +28,6 @@ exports.create_new_user = (req, res, next) => {
             user
               .save()
               .then(result => {
-                console.log(user);
-
                 res.status(201).json({
                   message: `New user created. User email: ${result.email}`
                 });

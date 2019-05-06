@@ -81,8 +81,6 @@ exports.create_new_location = (req, res, next) => {
     if (helperFunctions.checkJSONFileConsistency(uploadedFileParsed)) {
       //if file consistent and has latitude and longitude properties save the file content to DB
 
-      //   console.log(uploadedFileParsed);
-
       let additionalData = {};
 
       for (const prop in uploadedFileParsed) {
