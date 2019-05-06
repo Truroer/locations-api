@@ -1,16 +1,22 @@
 ## Getting started
 
-API for uploading a JSON files with locations and retrieving uploaded data
+##### API for uploading a JSON files with locations and retrieving uploaded data
 
-to run on your localhost:3000:
+To run on your localhost:3000:
 
-clone the repo
+To get Node go to nodejs.org
+
+Clone this repo:
+
+`git clone https://github.com/Truroer/locations-api`
 
 `cd location-api`
 
+Install the node modules
+
 `npm install`
 
-go to mongodb.com and create your database:
+Go to mongodb.com and create your database:
 
 -> Try free
 -> Build first Cluster
@@ -20,7 +26,7 @@ go to Security -> IP Whitelist -> Add IP Address and add your IP address or pres
 go to Overview and press "CONNECT" -> Connect Your Application and copy the connection string.
 
 Add .env file in the main folder of the repository with following contens where username and password are from
-the user you added at cloud.mongodb.com, clustername are the charachters from the connection
+the user you added at cloud.mongodb.com, clustername ist the charachters from the connection
 string between '....<password>@' and '.mongodb.net...' :
 
 ---
